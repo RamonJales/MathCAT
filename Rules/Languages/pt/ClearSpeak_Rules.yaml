@@ -322,7 +322,7 @@
   - x: "*[2]"
   - test:
       if: "$ClearSpeak_Exponents != 'Ordinal'"
-      then: [{v: "potência de"}]      # phrase(2 raised to the 'power' 7)
+      then: [{T: "potência de"}]      # phrase(2 raised to the 'power' 7)
 
 - name: simple-var
   tag: power
@@ -607,7 +607,7 @@
       else:
       - test:
           if: "$Verbosity!='Terse' and not(log_is_simple)"
-          then: {T: "a"}      # phrase('the' square root of 25)
+          then: {T: "o"}      # phrase('the' square root of 25)
       - test:
         - if: "*[1][text()='log']"
           then: [{T: "logaritmo"}]

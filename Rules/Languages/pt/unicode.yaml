@@ -10,7 +10,7 @@
  - "b-z": 
     - test: 
         if: "$TTS='none'"
-        then: [T: "a"]                          	# 	(en: '.', google translation)
+        then: [T: "."]                          	# 	(en: '.', google translation)
         else: [spell: "'.'"]                       
 
  # Capital letters are a little tricky: users can pick their favorite word (something that was requested) and 

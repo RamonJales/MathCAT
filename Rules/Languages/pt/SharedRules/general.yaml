@@ -405,7 +405,7 @@
   - test:
       if: "$Verbosity='Terse'"
       then: {t: "sheck"}      # phrase('sheck' is shorthand for hyperbolic secant)
-      else: {T: "secant hiperbólica"}      # phrase('hyperbolic secant' is a mathematical function)
+      else: {T: "secante hiperbólica"}      # phrase('hyperbolic secant' is a mathematical function)
 - name: csch
   tag: mi
   match: "text()='csch'"
@@ -446,7 +446,7 @@
       else:
       - test:
           if: "$Verbosity!='Terse' and not(log_is_simple)"
-          then: {T: "a"}      # phrase('the' square root of 25 equals 5)
+          then: {T: "o"}      # phrase('the' square root of 25 equals 5)
       - test:
         - if: "*[1][text()='log']"
           then: [{T: "logaritímica"}]      # phrase(the 'log' function is used in mathematics)

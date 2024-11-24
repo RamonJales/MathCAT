@@ -16,6 +16,102 @@ fn main() {
       .format_level(false)
       .init();
 
+
+      let _expr = 
+      r#" 
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi>x</mi>
+      <mo>=</mo>
+      <mrow data-mjx-texclass="ORD">
+        <mfrac>
+          <mrow>
+            <mo>&#x2212;</mo>
+            <mi>b</mi>
+            <mo>&#xB1;</mo>
+            <msqrt>
+              <msup>
+                <mi>b</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>&#x2212;</mo>
+              <mn>4</mn>
+              <mi>a</mi>
+              <mi>c</mi>
+            </msqrt>
+          </mrow>
+          <mrow>
+            <mn>2</mn>
+            <mi>a</mi>
+          </mrow>
+        </mfrac>
+      </mrow>
+      <mo>.</mo>
+    </math>
+    "#;
+
+    let _euler_formula = r#"
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mi>e</mi>
+        <msup>
+          <mi>i</mi>
+          <mi>&#x3C0;</mi>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mn>0</mn>
+      </math>
+      "#;
+      
+      let _pythagorean_theorem = r#"
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+          <msup>
+            <mi>a</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <msup>
+            <mi>b</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>=</mo>
+          <msup>
+            <mi>c</mi>
+            <mn>2</mn>
+          </msup>
+        </math>
+        "#;
+
+        let _integral = r#"
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mo>&#x222B;</mo>
+            <mi>f</mi>
+            <mo>(</mo>
+            <mi>x</mi>
+            <mo>)</mo>
+            <mi>d</mi>
+            <mi>x</mi>
+          </math>
+          "#;
+
+          let _summation = r#"
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+              <mo>&#x2211;</mo>
+              <msub>
+                <mi>i</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>=</mo>
+              <mi>n</mi>
+              <mo>(</mo>
+              <mi>a</mi>
+              <msub>
+                <mi>i</mi>
+                <mo>)</mo>
+              </msub>
+            </math>
+            "#;
+
   //  let expr = "
   //     <math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
   //     <mrow>
@@ -198,7 +294,7 @@ fn main() {
     panic!("Error: exiting -- {}", errors_to_string(&e));  }
 
   info!("Version = '{}'", get_version());
-  set_preference("Language".to_string(), "en".to_string()).unwrap();
+  set_preference("Language".to_string(), "pt".to_string()).unwrap();
   set_preference("TTS".to_string(), "None".to_string()).unwrap();
   set_preference("Verbosity".to_string(), "Medium".to_string()).unwrap();
   set_preference("Impairment".to_string(), "Blindness".to_string()).unwrap();
